@@ -2,87 +2,143 @@
 subtitle: No homepage, yet.
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
-templateEngineOverride: njk, md
+templateEngineOverride: njk
 ---
 
 {% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
   "vf_intro_lede": siteConfig.siteInformation.short_description,
   "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
+    ""
   ]
 } %}
+
+
+
 
 <section class="embl-grid embl-grid--has-centered-content">
   <div>
     <!-- empty -->
   </div>
+  
   <div class="vf-content">
+  <img src="images/section_header.jpg" />
   {% markdown %}
 
-  ## Quickstart
+  ### Vision for and mission of the EMBL Archive
+[In alignment with EMBL's missions], the EMBL Archive’s vision is to provide a resource that supports and documents European research, instrumentation and training in the field of molecular biology. It will do so by capturing, processing and making accessible EMBL’s scientific records and archives, and institutional documentary heritage of enduring historical value created (naturally or necessarily) or received by EMBL as a product of its activities at any of its current and future sites. This specifically includes material from persons (e.g. current or former staff), and can include material from organizations closely associated to EMBL and/or the life sciences.
+§2 of the EMBL Archive - Terms of Reference (2018)
 
-  ```
+  ### Activities
 
-      yarn create @visual-framework/vf-eleventy your-new-site-name vf-eleventy   
+  #### Archive Catalogue
+  You can consult the EMBL Archive catalogue on its dedicated website: archive.embl.org.
 
-  ```
+  #### Oral Histories
+  The EMBL Archive has established an Oral Histories programme. This programme gathers interviews that, together, capture the development, history and ongoing missions and achievements of EMBL, its people and the European molecular biology landscape.
 
-  This will install a new [`vf-eleventy`](https://github.com/visual-framework/vf-eleventy/) to a folder named `your-new-site-name`.
+  #### Science and Archives
+  How can archivists best collaborate with scientists to capture material for long-term preservation? The EMBL Archivist is part of an international network of archivists, the Committee on the Archives of Science and Technology that works to hone best practices for working with scientists and scientific archives so that creators, users and institutions continue to have access to original material that bears witness to scientific advances.
 
-  Then follow the onscreen prompts and links below to develop and configure.
+  #### Emergency Preparedness
+  The EMBL Archive is part of a local group, the Notfallverbund Archive Rhein-Neckar e.V. (NARN) to help ensure that, should any local archive be damaged in an emergency, as much as possible of its holdings will be salvaged.
 
-  ## Longer install?
+  #### Managing Personal Information
+  Archivists are trained to manage personal data in such ways that both respect individuals’ right to privacy and societies’ need to record their own activities. The EMBL Archive necessarily contains personal data, which is managed by the EMBL Archivist according to professional standards and EMBL's data protection framework. Together with EMBL Legal Services, the EMBL Archivist prepared this document to explain why and how the EMBL Archive uses and processes personal data. Please feel free to contact the EMBL Archivist with your questions.
 
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
+  #### Building the EMBL Archive
+  The idea to start the EMBL Archive first came from the Alumni Association Board in 2009 and was launched at the EMBL Staff-Alumni Reunion in 2010 (see in EMBLetc in October 2010, p. i). Thanks to the efforts and vision of a dedicated group of alumni, facilitated by EMBL Alumni Relations, the idea garnered enthusiasm throughout the EMBL community and developed into a Laboratory-wide initiative. The Wellcome Collection in London provided support and advice early on, and continues to do so. In January 2015, the first EMBL Archivist began working to formally establish the EMBL Archive, under the guidance of the EMBL Director General. In July 2018, the EMBL Archive was formally inaugurated. You can read about the inauguration here and watch a recording of the ceremony here.
+
+
 
   {% endmarkdown %}
 
   </div>
 </section>
 
+<hr class="vf-divider">
 
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
+<section class="vf-summary-container | embl-grid">
 
-<div>
-  <!-- empty -->
-</div>
-<div class="vf-content">
+    <div class="vf-section-header">
+        <h2 class="vf-section-header__heading">More from the archive</h2>
+    </div>
 
-## What you get
+    <div class="vf-section-content | vf-grid vf-grid__col-3">
 
-- the Eleventy static site generator
-- access to the Visual Framework component system
+        <article class="vf-summary">
+            <h3 class="vf-summary__title">
+                <a href="" class="vf-summary__link">Catalogue</a>
+            </h3>
+            <p class="vf-summary__text">The EMBL Archive exists to capture, preserve and share the documentary heritage of the European Molecular Biology Laboratory. The EMBL Archive holdings include unique materials relating to life sciences research at EMBL and in Europe since the mid-twentieth century.</p>
+        </article>
+        <article class="vf-summary">
+            <h3 class="vf-summary__title">
+                <a href="" class="vf-summary__link">Oral histories</a>
+            </h3>
+            <p class="vf-summary__text">As part of its regular activities, the EMBL Archivist meets with past and current EMBL staff and individuals closely associated to the Laboratory to record oral history interviews. Together, these interviews will constitute a comprehensive collection of first-person interviews that will inform about EMBL as a European scientific institution. </p>
+        </article>
+        <article class="vf-summary">
+            <h3 class="vf-summary__title">
+                <a href="" class="vf-summary__link">Science and archives</a>
+            </h3>
+            <p class="vf-summary__text">The archives of science document one of humankind’s greatest sagas. They comprise stories of discovery, invention, cures and exploration. As such, these archives should be captured, preserved and shared, much like our cultural and social heritage.</p>
+        </article>
 
-### Component installation
+    </div>
 
-To add a component you can use npm/Yarn or install it manually.
+</section>
 
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
+<hr class="vf-divider">
 
-- installation: `yarn add @visual-framework/vf-logo`
-- updating: `yarn upgrade-interactive --latest`
+<section class="vf-news-container | embl-grid embl-grid--has-sidebar">
 
-### Manual installation for customisation
+    <div class="vf-section-header">
+        <h2 class="vf-section-header__heading">EMBL Archive news</h2>
+    </div>
 
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
+    <div class="vf-news-container__content">
+        <article class="vf-summary vf-summary--news">
+            <span class="vf-summary__date">22 June 2018</span>
+            <h3 class="vf-summary__title">
+                <a href="JavaScript:Void(0);" class="vf-summary__link">
+      EMBL in six objects
+    </a>
+            </h3>
+            <p class="vf-summary__text">
+                <span class="vf-summary__category">
+      General
+    </span> A history of EMBL in six objects from the EMBL Archive
+            </p>
+        </article>
+        <article class="vf-summary vf-summary--news">
+            <span class="vf-summary__date">22 June 2018</span>
+            <h3 class="vf-summary__title">
+                <a href="JavaScript:Void(0);" class="vf-summary__link">
+      Communities building collections
+    </a>
+            </h3>
+            <p class="vf-summary__text">
+                <span class="vf-summary__category">
+      General
+    </span> In 2015, several boxes and many digital files greeted Anne-Flore Laloë on her first day at EMBL as the newly instated Archivist. Three years on, the EMBL Archive – now located in EMBL Heidelberg’s Building 14...
+            </p>
+        </article>
+        <article class="vf-summary vf-summary--news">
+            <span class="vf-summary__date">22 June 2018</span>
+            <h3 class="vf-summary__title">
+                <a href="JavaScript:Void(0);" class="vf-summary__link">
+      Jacques Dubochet donates Nobel medal to EMBL
+    </a>
+            </h3>
+            <p class="vf-summary__text">
+                <span class="vf-summary__category">
+      General
+    </span> Jacques Dubochet, who was awarded the Nobel Prize in Chemistry in 2017, recently surprised EMBL in a wonderful way
+            </p>
+        </article>
+    </div>
 
-### Add your own local component
+    <div class="vf-news-container__sidebar">
+    </div>
 
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
 </section>

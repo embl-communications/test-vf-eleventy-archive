@@ -10,7 +10,7 @@
   "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
   "main": "gulpfile.js",
   "vfConfig": {
-    "vfName": "VF Boilerplate for Eleventy",
+    "vfName": "Test archive page",
     "vfNamespace": "vfeleventy-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
@@ -59,5 +59,9 @@
     "url": "https://github.com/visual-framework/vf-eleventy/issues"
   },
   "homepage": "https://github.com/visual-framework/vf-eleventy#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@visual-framework/vf-news-container": "^1.0.0-alpha.7",
+    "@visual-framework/vf-summary-container": "^1.0.0-beta.7"
+  }
 }
