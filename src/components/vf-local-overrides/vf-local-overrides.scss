@@ -10,6 +10,7 @@
 
 @import 'vf-local-overrides.variables.scss';
 
-.vf-local-overrides {
-  /* your settings here */
+.vf-content img {
+  /* this is likely something we should add to vf-core, we haven't done much image testing yet */
+  max-width: 100%;
 }
